@@ -1,12 +1,74 @@
-# React + Vite
+# AI Component Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Generate modern, animated, and responsive UI components with AI in seconds.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+AI Component Generator is a web application that leverages Google Gemini AI to generate high-quality, production-ready UI components based on your description. Choose your preferred framework (HTML + CSS, Tailwind, Bootstrap, etc.), describe your component, and get instant code with live preview and download options.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **AI-powered UI code generation** (Google Gemini API)
+- **Framework selection**: HTML + CSS, Tailwind CSS, Bootstrap, and more
+- **Live code editor** (Monaco Editor)
+- **Instant preview** of generated components
+- **Copy or download** generated code
+- **Responsive, modern UI** built with React and Tailwind CSS
+- **Toast notifications** for user feedback
+
+## Tech Stack
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Google Gemini AI](https://ai.google.dev/)
+- [Monaco Editor](https://microsoft.github.io/monaco-editor/)
+- [React Select](https://react-select.com/)
+- [React Toastify](https://fkhadra.github.io/react-toastify/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+## Getting Started
+
+### 1. Clone the repository
+
+```sh
+ git clone https://github.com/sachiinrawat/ai-component-generator.git
+ cd ai-component-generator
+```
+
+### 2. Install dependencies
+
+```sh
+ npm install
+```
+
+### 3. Start the development server
+
+```sh
+ npm run dev
+```
+
+The app will be available at [http://localhost:5173](http://localhost:5173) (or as shown in your terminal).
+
+## Usage
+
+1. Select your desired framework (HTML + CSS, Tailwind, Bootstrap, etc.).
+2. Describe the UI component you want (e.g., "modern animated login form").
+3. Click **Generate** to let AI create the code.
+4. View, copy, or download the generated code. Use the **Preview** tab to see the component live.
+
+## Project Structure
+
+- `src/components/` – Reusable UI components (e.g., Navbar)
+- `src/pages/` – Main pages (Home, NoPage)
+- `src/App.jsx` – App routing
+- `src/main.jsx` – App entry point
+
+## Customization
+
+- **API Key**: The Google Gemini API key is currently hardcoded in `src/pages/Home.jsx`. For production, use environment variables for security.
+- **Frameworks**: Add or modify frameworks in the `options` array in `Home.jsx`.
+
+## License
+
+MIT
